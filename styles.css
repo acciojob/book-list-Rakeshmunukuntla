@@ -1,1 +1,8 @@
 /*  your css code here. If applicable */
+table
+{
+	height:50px;
+	width:70%;
+	border:2px solid black;
+	border-collapse:collapse;
+}
