@@ -38,20 +38,3 @@ document.getElementById("book-list").addEventListener("click", (e) => {
 
 
 /********************************************/
-describe('Book List Tests', () => {
-    it('Should add a book to the list', () => {
-        // Visit the application
-        cy.visit('http://localhost:3000');
-
-        // Fill in the form
-        cy.get('#title').type('Book2');
-        cy.get('#author').type('Author2');
-        cy.get('#isbn').type('1234567890');
-
-        // Click the submit button
-        cy.get('#submit').click();
-
-        // Verify the book appears in the table
-        cy.get('#book-list').find('td').contains('Book2').should('exist');
-    });
-});
